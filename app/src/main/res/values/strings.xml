@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TripAdvisor</string>
+    <string name="mediterranean_coastal_slightseeing_cruise_from_nice">Mediterranean Coastal Slightseeing Cruise From Nice</string>
+    <string name="full_day_tour">Full-day Tour</string>
+    <string name="from_24_per_adult">From $24 per adult</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="8dp"
+    android:background="@color/black"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+
+    android:layout_marginTop="3dp">
+
+
+
+        <!-- Hotel Image -->
+        <ImageView
+            android:id="@+id/imgHotel"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+           />
+
+        <!-- Hotel Name -->
+        <TextView
+            android:id="@+id/tvHotelName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Hotel Name"
+            android:layout_marginLeft="14dp"
+            android:textColor="@android:color/white"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgHotel" />
+
+        <!-- Hotel Rating and Reviews -->
+        <TextView
+            android:id="@+id/tvHotelRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="4dp"
+            android:text="⭐⭐⭐⭐⭐ 536 reviews"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvHotelName" />
+
+        <!-- Hotel Address -->
+        <TextView
+            android:id="@+id/tvHotelAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="4dp"
+            android:text="9th Arr. - Opéra"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvHotelRating" />
+
+        <TextView
+            android:id="@+id/tvLink"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:text="Visit Website"
+            android:textColor="@android:color/holo_blue_dark"
+            android:autoLink="web"
+            android:clickable="true"
+            android:linksClickable="true"
+           />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$396"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            />
+
+
+        <!-- View Deal Button -->
+        <Button
+            android:id="@+id/btnViewDeal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="290dp"
+            android:backgroundTint="@color/yellow"
+            android:text="View Deal"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvHotelAddress" />
+
+
+</LinearLayout>

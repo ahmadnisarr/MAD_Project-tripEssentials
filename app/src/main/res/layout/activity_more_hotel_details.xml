@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MoreHotelDetails">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp"
+        android:background="@color/black"
+        android:layout_marginTop="3dp">
+
+        <!-- Hotel Image -->
+        <ImageView
+            android:id="@+id/imgHotel"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            />
+
+        <!-- Hotel Name -->
+        <TextView
+            android:id="@+id/tvHotelName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="14dp"
+            android:text="Hotel Name"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="normal" />
+
+        <!-- Hotel Rating and Reviews -->
+        <TextView
+            android:id="@+id/tvHotelRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="8dp"
+            android:text="⭐⭐⭐ 109 reviews"
+            android:textColor="@android:color/white" />
+
+        <!-- Contact Options -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/websiteLink"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:text="Visit Website"
+                android:textColor="@android:color/holo_blue_dark"
+                android:autoLink="web"
+                android:textSize="15dp"
+                android:textStyle="italic"
+                android:clickable="true"
+                android:linksClickable="true" />
+
+            <TextView
+                android:id="@+id/callLink"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:text="Call"
+                android:textColor="@android:color/holo_blue_dark"
+                android:autoLink="web"
+                android:clickable="true"
+                android:linksClickable="true"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/emailLink"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="4dp"
+                android:textSize="15dp"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:text="Email"
+                android:textColor="@android:color/holo_blue_dark"
+                android:autoLink="web"
+                android:clickable="true"
+                android:linksClickable="true" />
+        </LinearLayout>
+
+        <!-- Price and Booking Option -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/Booking"
+                android:layout_marginLeft="13dp"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/booking" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_marginStart="210dp"
+                android:layout_marginTop="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$396"
+                android:textSize="25dp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <!-- View Deal Button -->
+        <Button
+            android:id="@+id/btnViewDeal"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/yellow"
+            android:text="View Deal"
+            android:textSize="16dp"
+            android:textColor="@color/black" />
+
+        <!-- About Section -->
+        <TextView
+            android:id="@+id/AboutLogo"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:textSize="25dp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/About"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nothing"
+            android:textSize="15dp"
+            android:textColor="@android:color/white" />
+
+        <!-- The Area Section -->
+        <TextView
+            android:id="@+id/areaLogo"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The area"
+            android:textSize="25dp"
+            android:textColor="@android:color/white" />
+
+        <!-- Address Section -->
+        <TextView
+            android:id="@+id/addressLogo"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textSize="18dp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textSize="15dp"
+            android:textColor="@android:color/white" />
+
+        <!-- Amenities Section -->
+        <TextView
+            android:id="@+id/amenitiesLogo"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amenities"
+            android:textSize="25dp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/amenities"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Free High Speed Internet (WiFi)\nPool\nFitness Center with Gym/Workout Room\nBar/lounge"
+            android:textSize="18dp"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</ScrollView>

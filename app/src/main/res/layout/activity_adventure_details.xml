@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AdventureDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/black"
+            android:layout_marginTop="3dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="8dp">
+
+            <!-- Hotel Image -->
+            <ImageView
+                android:id="@+id/imgHotel"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                />
+
+            <!-- Hotel Name -->
+            <TextView
+                android:id="@+id/tvHotelName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="14dp"
+                android:text="Hotel Name"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <!-- Hotel Rating and Reviews -->
+            <TextView
+                android:id="@+id/tvHotelRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="8dp"
+                android:text="⭐⭐⭐⭐⭐ 309 reviews"
+                android:textColor="@android:color/white" />
+
+
+            <TextView
+                android:id="@+id/AboutLogo"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textColor="@android:color/white" />
+            <!-- About -->
+            <TextView
+                android:id="@+id/about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="8dp"
+                android:text="About"
+                android:textSize="18dp"
+                android:textColor="@android:color/white" />
+
+            <!-- Highlights -->
+            <TextView
+                android:id="@+id/HightlightLogo"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HightLights"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textColor="@android:color/white" />
+            <TextView
+                android:id="@+id/highlights"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Highlights"
+                android:textSize="18dp"
+                android:textColor="@android:color/white" />
+
+            <!-- Price -->
+            <TextView
+                android:id="@+id/price"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="From \n$396\nper adult"
+                android:textSize="18sp"
+                android:textColor="@color/white" />
+
+            <!-- View Deal Button (commented out in your code) -->
+            <!--
+            <Button
+                android:id="@+id/btnViewDeal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="290dp"
+                android:backgroundTint="@color/yellow"
+                android:text="View Deal"
+                android:textColor="@color/black" />
+            -->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

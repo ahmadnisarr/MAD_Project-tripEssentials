@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Profile Picture Section -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:id="@+id/editprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit profile"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_below="@+id/editprofile"
+                android:id="@+id/profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/circle_background"
+                android:layout_marginTop="35dp"/>
+
+
+        </RelativeLayout>
+
+        <!-- Name Input -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\tName"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_marginTop="24dp" />
+
+        <EditText
+            android:id="@+id/name_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editprofilebox"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:hint="Enter a  Name" />
+
+
+        <!-- Current City Input -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\tCurrent city"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_marginTop="24dp" />
+
+
+
+        <EditText
+            android:id="@+id/city_Search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#CCCCCC"
+            android:drawableLeft="@drawable/baseline_search_24"
+            android:background="@drawable/editprofilebox"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:hint="Search City" />
+
+
+        <!-- Website Input -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\tWebsite"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_marginTop="24dp" />
+
+
+
+        <EditText
+            android:id="@+id/website_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="\tAdd a website"
+            android:textColorHint="#CCCCCC"
+            android:background="@drawable/editprofilebox"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp" />
+
+        <!-- About You Input -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\About you"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_marginTop="24dp" />
+
+
+
+        <EditText
+            android:id="@+id/about_input"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:hint="Write some details about yourself"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/editprofilebox"
+            android:textColorHint="#CCCCCC"
+            android:backgroundTint="#444444"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:layout_marginTop="8dp"
+            android:padding="12dp" />
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="32dp"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+</FrameLayout>

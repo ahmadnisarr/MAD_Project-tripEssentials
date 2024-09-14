@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "439835417951",
+    "project_id": "tripessentials-33486",
+    "storage_bucket": "tripessentials-33486.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439835417951:android:97a833a5277930aa80aaea",
+        "android_client_info": {
+          "package_name": "com.example.tripadvisor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJRy1keczcc1pG-cvBa2o7a5oGEZopNlU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

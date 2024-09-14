@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="8dp"
+        android:background="@color/black"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/adventureImage"
+            android:layout_height="180dp"
+            android:src="@drawable/meditariancruise" />
+
+        <TextView
+            android:id="@+id/adventureText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:padding="8dp"
+            android:text="@string/mediterranean_coastal_slightseeing_cruise_from_nice"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="" />
+
+        <TextView
+            android:id="@+id/adventureText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:text="@string/full_day_tour"
+            android:textColor="#60E4A8"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/adventureText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:text="@string/from_24_per_adult"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="16sp" />
+
+</LinearLayout>
